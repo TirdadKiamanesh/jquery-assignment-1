@@ -4,11 +4,20 @@
 
 // var className = $('view').attr('class');
 
-function createElement() {
+// function createElement() {
 
-$("view").append("body");
+// $("view").append("body");
 
-}
+// }
+
+
+$("#foo").append("<div>hello world</div>")
+
+var txt1="<p>Text.</p>";               // Create element with HTML  
+var txt2=$("<p></p>").text("Text.");   // Create with jQuery
+var txt3=document.createElement("p");  // Create with DOM
+txt3.innerHTML="Text.";
+$("p").append(txt1,txt2,txt3);         // Append the new elements 
 
 
 // 1. Create a `div` element with a class name of "**grass**" and append it to the previously created "view" div from step 3.
