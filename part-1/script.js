@@ -19,6 +19,8 @@ $("body").append(view);
 // }
 
 
+
+
 // $("body").append("<div>hello world</div>")
 
 // var txt1="<p>Text.</p>";               // Create element with HTML  
@@ -30,9 +32,29 @@ $("body").append(view);
 
 // 1. Create a `div` element with a class name of "**grass**" and append it to the previously created "view" div from step 3.
 
+var grass = $("<div>");
+
+grass.addClass("grass");
+
+$(".view").append(grass)
+
+
 // 1. Create a `div` element with a class name of "**sun**" and append it to the previously created "view" div from step 3.
 
+var divSun = $("<div>");
+divSun.addClass("sun");
+$(".view").append(divSun);
+
+
 // 1. Write a [`while`] loop to create 5 divs. The div classes will be "**ray-1**", "**ray-2**", "**ray-3**", "**ray-4**", and "**ray-5**". Append each of these divs to the previously created "sun" div from step 5.
+
+var i = 5;
+while (i > 0) {
+  var divRay = $("<div>");
+  divRay.addClass("ray-" + i);
+  $(".sun").append(divRay);
+  i--;
+}
 
 // 1. Create a `div` element with a class name of "**mountain**" and append it to the previously created "view" div from step 3.
 
