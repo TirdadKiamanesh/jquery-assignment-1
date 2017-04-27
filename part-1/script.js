@@ -41,24 +41,33 @@ $(".view").append(grass)
 
 // 1. Create a `div` element with a class name of "**sun**" and append it to the previously created "view" div from step 3.
 
-var divSun = $("<div>");
-divSun.addClass("sun");
-$(".view").append(divSun);
+var sun = $("<div>");
+sun.addClass("sun");
+$(".view").append(sun);
 
 
 // 1. Write a [`while`] loop to create 5 divs. The div classes will be "**ray-1**", "**ray-2**", "**ray-3**", "**ray-4**", and "**ray-5**". Append each of these divs to the previously created "sun" div from step 5.
 
 var i = 5;
 while (i > 0) {
-  var divRay = $("<div>");
-  divRay.addClass("ray-" + i);
-  $(".sun").append(divRay);
+  var ray = $("<div>");
+  ray.addClass("ray-" + i);
+  $(".sun").append(ray);
   i--;
 }
 
 // 1. Create a `div` element with a class name of "**mountain**" and append it to the previously created "view" div from step 3.
 
+var mountain = $("<div>");
+mountain.addClass("mountain");
+$(".view").append(mountain);
+
 // 1. Create a `div` element with a class name of "**mountain-top**" and append it to the previously created "mountain" div from step 7.
+
+var mountainTop = $("<div>");
+mountainTop.addClass("mountain-top");
+$(".mountain").append(mountainTop);
+
 
 // 1. Write a [`do...while`] loop to create 3 divs. The div classes will be "**mountain-cap-1**", "**mountain-cap-2**", and "**mountain-cap-3**". Append each of these divs to the previously created "mountain-top" div from step 8.
 
