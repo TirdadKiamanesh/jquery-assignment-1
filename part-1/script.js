@@ -68,8 +68,16 @@ var mountainTop = $("<div>");
 mountainTop.addClass("mountain-top");
 $(".mountain").append(mountainTop);
 
-
 // 1. Write a [`do...while`] loop to create 3 divs. The div classes will be "**mountain-cap-1**", "**mountain-cap-2**", and "**mountain-cap-3**". Append each of these divs to the previously created "mountain-top" div from step 8.
+
+var l = 3 ;
+do {
+  var mountainCap = $("<div>");
+  mountainCap.addClass("mountain-cap-" + l);
+  $(".mountain-top").append(mountainCap);
+  l--;
+} while (l > 0)
+
 
 // ### What the HTML should look like when you're done.
 
